@@ -84,7 +84,7 @@ func GroupFight(pets []*Pet) string {
 			if e == i {
 				coin := rand.Intn(2)
 				if coin == 1 {
-					hp := pets[i].hp / 4
+					hp := pets[i].hp / (rand.Intn(5) + 1)
 					pets[i].hp += hp
 					res += fmt.Sprintf(HP_UP_DESC, p.name, hp)
 				} else {
