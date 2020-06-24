@@ -195,9 +195,9 @@
           <option name="timeStamp" value="42" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/main.go</url>
-          <line>75</line>
-          <option name="timeStamp" value="43" />
+          <url>file://$PROJECT_DIR$/pet/pet.go</url>
+          <line>79</line>
+          <option name="timeStamp" value="44" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
