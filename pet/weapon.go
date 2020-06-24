@@ -5,43 +5,53 @@ import (
 	"math/rand"
 )
 
-const (
-	ATTR_CRIT = 1 // 暴击
-	ATTR_FLASH = 2 // 闪避
-	ATTR_REST = 3 // 休息
-	ATTR_LOCK = 4 // 必中
-	ATTR_CONT = 5 // 连续
-	ATTR_DODGE = 6 // 闪避
-
-
-	KIND_S = 0
-	KIND_M = 1
-	KIND_L = 2
-	KIND_T = 3 // 投掷类
-)
-
-type attribute struct {
-	Kind int
+type Attribute struct {
+	name        string
+	effect      func(p1, p2 *Pet) string
+	Kind        int
 	Probability int
 }
 
-type weapon struct {
-	Id int
-	Name string
-	MinAttack int
-	MaxAttack int
-	Attribute []attribute
+type Weapon struct {
+	Id          int
+	Name        string
+	MinAttack   int
+	MaxAttack   int
+	Attribute   []Attribute
 	Probability int
-	Level int
-	Kind int
+	Level       int
+	Kind        int
 }
 
-
-
-func (w *weapon)use(p1, p2 *Pet) string {
+func (w *Weapon) use(p1, p2 *Pet) string {
 	hp := p2.hp
-	attack := w.MinAttack + rand.Intn(w.MaxAttack - w.MinAttack)
+
+	// todo 检查自己的状态
+	// todo 检查敌人的状态
+	// todo 检查武器效果
+	// todo 校验是否闪避
+
+	// 攻击对方，扣除血量
+	attack := w.MinAttack + rand.Intn(w.MaxAttack-w.MinAttack)
 	p2.hp -= attack
 	return fmt.Sprintf(ATTACK_DESC, p1.name, p1.hp, w.Name, p2.name, hp, attack)
-	
+
+}
+
+func (w *Weapon) crit(p1, p2 *Pet) string {
+	w.MaxAttack = w.MaxAttack * 3 / 2
+	return fmt.Sprintf(CRIT_DESC, p1.name)
+}
+
+func (w *Weapon) blood(p1, p2 *Pet) string {
+	p1.status.Blood = attr{round: 1}
+	return ""
+}
+
+func (w *Weapon) continuous(p1, p2 *Pet) string {
+	p1.status.Cont = attr{
+		round: 1,
+		num:   100,
+	}
+	return ""
 }
