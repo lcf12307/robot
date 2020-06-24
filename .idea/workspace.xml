@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71a505d5-8e25-4864-9982-f126b934c570" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/pet/data.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pet/rank.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pet/pet.go" beforeDir="false" afterPath="$PROJECT_DIR$/pet/pet.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet/title.go" beforeDir="false" afterPath="$PROJECT_DIR$/pet/title.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet/weapon.go" beforeDir="false" afterPath="$PROJECT_DIR$/pet/weapon.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot" beforeDir="false" afterPath="$PROJECT_DIR$/robot" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +28,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1dfYKIPhtehzzEnRJjNjcSQeIGa" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -30,6 +38,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="GO_FMT" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -66,55 +75,136 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add skill" />
+    <option name="LAST_COMMIT_MESSAGE" value="add skill" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="349" y="71" key="#go_build_main.go" timestamp="1592827060378">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="349" y="71" key="#go_build_main.go/0.23.1280.777/-1920.-257.1920.1053@0.23.1280.777" timestamp="1592827060378" />
-    <state width="1238" height="243" key="GridCell.Tab.0.bottom" timestamp="1592914486579">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state x="234" y="23" key="CommitChangelistDialog2" timestamp="1592916173262">
+      <screen x="0" y="23" width="1280" height="773" />
     </state>
+    <state x="234" y="23" key="CommitChangelistDialog2/0.23.1280.773/-1920.-257.1920.1057@0.23.1280.773" timestamp="1592916173262" />
+    <state width="1238" height="243" key="GridCell.Tab.0.bottom" timestamp="1592976679536">
+      <screen x="0" y="23" width="1280" height="773" />
+    </state>
+    <state width="1238" height="243" key="GridCell.Tab.0.bottom/0.23.1280.773/-1920.-257.1920.1057@0.23.1280.773" timestamp="1592976679536" />
     <state width="1238" height="243" key="GridCell.Tab.0.bottom/0.23.1280.777/-1920.-257.1920.1053@0.23.1280.777" timestamp="1592914486579" />
-    <state width="1238" height="243" key="GridCell.Tab.0.center" timestamp="1592914486578">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state width="1238" height="243" key="GridCell.Tab.0.center" timestamp="1592976679536">
+      <screen x="0" y="23" width="1280" height="773" />
     </state>
+    <state width="1238" height="243" key="GridCell.Tab.0.center/0.23.1280.773/-1920.-257.1920.1057@0.23.1280.773" timestamp="1592976679536" />
     <state width="1238" height="243" key="GridCell.Tab.0.center/0.23.1280.777/-1920.-257.1920.1053@0.23.1280.777" timestamp="1592914486578" />
-    <state width="1238" height="243" key="GridCell.Tab.0.left" timestamp="1592914486578">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state width="1238" height="243" key="GridCell.Tab.0.left" timestamp="1592976679535">
+      <screen x="0" y="23" width="1280" height="773" />
     </state>
+    <state width="1238" height="243" key="GridCell.Tab.0.left/0.23.1280.773/-1920.-257.1920.1057@0.23.1280.773" timestamp="1592976679535" />
     <state width="1238" height="243" key="GridCell.Tab.0.left/0.23.1280.777/-1920.-257.1920.1053@0.23.1280.777" timestamp="1592914486578" />
-    <state width="1238" height="243" key="GridCell.Tab.0.right" timestamp="1592914486579">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state width="1238" height="243" key="GridCell.Tab.0.right" timestamp="1592976679536">
+      <screen x="0" y="23" width="1280" height="773" />
     </state>
+    <state width="1238" height="243" key="GridCell.Tab.0.right/0.23.1280.773/-1920.-257.1920.1057@0.23.1280.773" timestamp="1592976679536" />
     <state width="1238" height="243" key="GridCell.Tab.0.right/0.23.1280.777/-1920.-257.1920.1053@0.23.1280.777" timestamp="1592914486579" />
-    <state width="1238" height="243" key="GridCell.Tab.1.bottom" timestamp="1592914486581">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state width="1238" height="243" key="GridCell.Tab.1.bottom" timestamp="1592976679537">
+      <screen x="0" y="23" width="1280" height="773" />
     </state>
+    <state width="1238" height="243" key="GridCell.Tab.1.bottom/0.23.1280.773/-1920.-257.1920.1057@0.23.1280.773" timestamp="1592976679537" />
     <state width="1238" height="243" key="GridCell.Tab.1.bottom/0.23.1280.777/-1920.-257.1920.1053@0.23.1280.777" timestamp="1592914486581" />
-    <state width="1238" height="243" key="GridCell.Tab.1.center" timestamp="1592914486580">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state width="1238" height="243" key="GridCell.Tab.1.center" timestamp="1592976679537">
+      <screen x="0" y="23" width="1280" height="773" />
     </state>
+    <state width="1238" height="243" key="GridCell.Tab.1.center/0.23.1280.773/-1920.-257.1920.1057@0.23.1280.773" timestamp="1592976679537" />
     <state width="1238" height="243" key="GridCell.Tab.1.center/0.23.1280.777/-1920.-257.1920.1053@0.23.1280.777" timestamp="1592914486580" />
-    <state width="1238" height="243" key="GridCell.Tab.1.left" timestamp="1592914486579">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state width="1238" height="243" key="GridCell.Tab.1.left" timestamp="1592976679537">
+      <screen x="0" y="23" width="1280" height="773" />
     </state>
+    <state width="1238" height="243" key="GridCell.Tab.1.left/0.23.1280.773/-1920.-257.1920.1057@0.23.1280.773" timestamp="1592976679537" />
     <state width="1238" height="243" key="GridCell.Tab.1.left/0.23.1280.777/-1920.-257.1920.1053@0.23.1280.777" timestamp="1592914486579" />
-    <state width="1238" height="243" key="GridCell.Tab.1.right" timestamp="1592914486580">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state width="1238" height="243" key="GridCell.Tab.1.right" timestamp="1592976679537">
+      <screen x="0" y="23" width="1280" height="773" />
     </state>
+    <state width="1238" height="243" key="GridCell.Tab.1.right/0.23.1280.773/-1920.-257.1920.1057@0.23.1280.773" timestamp="1592976679537" />
     <state width="1238" height="243" key="GridCell.Tab.1.right/0.23.1280.777/-1920.-257.1920.1053@0.23.1280.777" timestamp="1592914486580" />
-    <state width="640" height="386" key="XDebugger.FullValuePopup" timestamp="1592909870235">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state x="240" y="149" key="Vcs.Push.Dialog.v2" timestamp="1592916175853">
+      <screen x="0" y="23" width="1280" height="773" />
     </state>
+    <state x="240" y="149" key="Vcs.Push.Dialog.v2/0.23.1280.773/-1920.-257.1920.1057@0.23.1280.773" timestamp="1592916175853" />
+    <state width="640" height="385" key="XDebugger.FullValuePopup" timestamp="1592973551936">
+      <screen x="0" y="23" width="1280" height="773" />
+    </state>
+    <state width="640" height="385" key="XDebugger.FullValuePopup/0.23.1280.773/-1920.-257.1920.1057@0.23.1280.773" timestamp="1592973551936" />
     <state width="640" height="386" key="XDebugger.FullValuePopup/0.23.1280.777/-1920.-257.1920.1053@0.23.1280.777" timestamp="1592909870235" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/pet/weapon.go</url>
-          <line>222</line>
-          <option name="timeStamp" value="6" />
+          <url>file://$PROJECT_DIR$/pet/rank.go</url>
+          <line>59</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/pet/rank.go</url>
+          <line>57</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/pet/rank.go</url>
+          <line>42</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/pet/rank.go</url>
+          <line>34</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/pet/rank.go</url>
+          <line>28</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/pet/rank.go</url>
+          <line>23</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/pet/rank.go</url>
+          <line>29</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/pet/rank.go</url>
+          <line>30</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/pet/rank.go</url>
+          <line>49</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/pet/rank.go</url>
+          <line>111</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/pet/rank.go</url>
+          <line>51</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/main.go</url>
+          <line>2</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/main.go</url>
+          <line>75</line>
+          <option name="timeStamp" value="43" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

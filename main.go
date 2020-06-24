@@ -16,18 +16,7 @@ import (
 const appKey = "0780a11ecdb6263d"
 const youDongKey = "dc1a7874b6eda27445d4"
 const youDOngSec = "a50daad969f8382ad39e"
-type apiResp struct {
-	status int
-	msg	string
-	result []todayResp
-}
-type todayResp struct {
-	title string
-	year int
-	month int
-	day int
-	content string
-}
+
 func main() {
 	r := gin.Default()
 	r.POST("/test", func(c *gin.Context) {
@@ -64,12 +53,41 @@ func main() {
 	r.POST("dd", func(c *gin.Context) {
 		params := handleParam(c)
 		texts := strings.Split(handleText(params["text"].(string)), "@")
-		ename := texts[1]
-		mname := params["user_name"].(string)
+		if len(texts) == 0 {
+			sss := setOutPut("发送文字有误，请重新发送", false, nil)
+			c.JSON(200, sss)
+			return
+		}
+		var res string
+		switch texts[0] {
+		case "":
+			if len(texts) == 2 {
+				ename := strings.Trim(texts[1], " ")
+				mname := params["user_name"].(string)
+				p := pet.Adopt(mname)
+				ep := pet.Adopt(ename)
+				res = p.Pk(ep)
+			} else {
+				mname := params["user_name"].(string)
+				p := pet.Adopt(mname)
+				pets := []*pet.Pet{
+					p,
+				}
+				for i:=1; i<len(texts); i++ {
+					pets = append(pets, pet.Adopt(strings.Trim(texts[i], " ")))
+				}
+				res = pet.GroupFight(pets)
+			}
 
-		p := pet.Adopt(mname)
-		ep := pet.Adopt(ename)
-		res := p.Pk(ep)
+			break
+		case "琅琊高手榜":
+			res = pet.RankResult()
+			break
+		case "我的pk":
+			res = pet.MyRank(params["user_name"].(string))
+			break
+		}
+
 		sss := setOutPut(res, false, nil)
 		c.JSON(200, sss)
 	})
