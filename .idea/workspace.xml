@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="71a505d5-8e25-4864-9982-f126b934c570" name="Default Changelist" comment="">
+    <list default="true" id="71a505d5-8e25-4864-9982-f126b934c570" name="Default Changelist" comment="feature：血">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pet/pet.go" beforeDir="false" afterPath="$PROJECT_DIR$/pet/pet.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/robot" beforeDir="false" afterPath="$PROJECT_DIR$/robot" afterDir="false" />
     </list>
@@ -75,38 +76,39 @@
     <MESSAGE value="fix：名字包含空格" />
     <MESSAGE value="fix：技能和武器特效基本框架搭建" />
     <MESSAGE value="feature：文案" />
-    <option name="LAST_COMMIT_MESSAGE" value="feature：文案" />
+    <MESSAGE value="feature：血量值完善" />
+    <option name="LAST_COMMIT_MESSAGE" value="feature：血量值完善" />
   </component>
   <component name="WindowStateProjectService">
     <state x="349" y="71" key="#go_build_main.go" timestamp="1592827060378">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="349" y="71" key="#go_build_main.go/0.23.1280.777/-1920.-257.1920.1053@0.23.1280.777" timestamp="1592827060378" />
-    <state x="234" y="23" width="812" height="777" key="CommitChangelistDialog2" timestamp="1592996097015">
-      <screen x="0" y="23" width="1280" height="777" />
+    <state x="234" y="23" width="812" height="777" key="CommitChangelistDialog2" timestamp="1592998026360">
+      <screen x="0" y="23" width="1280" height="773" />
     </state>
-    <state x="234" y="23" key="CommitChangelistDialog2/0.23.1280.773/-1920.-257.1920.1057@0.23.1280.773" timestamp="1592980437376" />
-    <state x="234" y="23" width="812" height="777" key="CommitChangelistDialog2/0.23.1280.777/-1920.-257.1920.1053@0.23.1280.777" timestamp="1592996097015" />
-    <state width="1238" height="196" key="GridCell.Tab.0.bottom" timestamp="1592995069627">
+    <state x="234" y="23" key="CommitChangelistDialog2/0.23.1280.773/-1920.-257.1920.1057@0.23.1280.773" timestamp="1592998026360" />
+    <state x="234" y="23" width="812" height="777" key="CommitChangelistDialog2/0.23.1280.777/-1920.-257.1920.1053@0.23.1280.777" timestamp="1592997635197" />
+    <state width="1238" height="196" key="GridCell.Tab.0.bottom" timestamp="1592997665069">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state width="1238" height="243" key="GridCell.Tab.0.bottom/0.23.1280.773/-1920.-257.1920.1057@0.23.1280.773" timestamp="1592982324695" />
-    <state width="1238" height="196" key="GridCell.Tab.0.bottom/0.23.1280.777/-1920.-257.1920.1053@0.23.1280.777" timestamp="1592995069627" />
-    <state width="1238" height="196" key="GridCell.Tab.0.center" timestamp="1592995069626">
+    <state width="1238" height="196" key="GridCell.Tab.0.bottom/0.23.1280.777/-1920.-257.1920.1053@0.23.1280.777" timestamp="1592997665069" />
+    <state width="1238" height="196" key="GridCell.Tab.0.center" timestamp="1592997665069">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state width="1238" height="243" key="GridCell.Tab.0.center/0.23.1280.773/-1920.-257.1920.1057@0.23.1280.773" timestamp="1592982324694" />
-    <state width="1238" height="196" key="GridCell.Tab.0.center/0.23.1280.777/-1920.-257.1920.1053@0.23.1280.777" timestamp="1592995069626" />
-    <state width="1238" height="196" key="GridCell.Tab.0.left" timestamp="1592995069626">
+    <state width="1238" height="196" key="GridCell.Tab.0.center/0.23.1280.777/-1920.-257.1920.1053@0.23.1280.777" timestamp="1592997665069" />
+    <state width="1238" height="196" key="GridCell.Tab.0.left" timestamp="1592997665068">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state width="1238" height="243" key="GridCell.Tab.0.left/0.23.1280.773/-1920.-257.1920.1057@0.23.1280.773" timestamp="1592982324694" />
-    <state width="1238" height="196" key="GridCell.Tab.0.left/0.23.1280.777/-1920.-257.1920.1053@0.23.1280.777" timestamp="1592995069626" />
-    <state width="1238" height="196" key="GridCell.Tab.0.right" timestamp="1592995069627">
+    <state width="1238" height="196" key="GridCell.Tab.0.left/0.23.1280.777/-1920.-257.1920.1053@0.23.1280.777" timestamp="1592997665068" />
+    <state width="1238" height="196" key="GridCell.Tab.0.right" timestamp="1592997665069">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state width="1238" height="243" key="GridCell.Tab.0.right/0.23.1280.773/-1920.-257.1920.1057@0.23.1280.773" timestamp="1592982324695" />
-    <state width="1238" height="196" key="GridCell.Tab.0.right/0.23.1280.777/-1920.-257.1920.1053@0.23.1280.777" timestamp="1592995069627" />
+    <state width="1238" height="196" key="GridCell.Tab.0.right/0.23.1280.777/-1920.-257.1920.1053@0.23.1280.777" timestamp="1592997665069" />
     <state width="1238" height="243" key="GridCell.Tab.1.bottom" timestamp="1592982324697">
       <screen x="0" y="23" width="1280" height="773" />
     </state>
@@ -127,11 +129,11 @@
     </state>
     <state width="1238" height="243" key="GridCell.Tab.1.right/0.23.1280.773/-1920.-257.1920.1057@0.23.1280.773" timestamp="1592982324696" />
     <state width="1238" height="243" key="GridCell.Tab.1.right/0.23.1280.777/-1920.-257.1920.1053@0.23.1280.777" timestamp="1592914486580" />
-    <state x="240" y="150" key="Vcs.Push.Dialog.v2" timestamp="1592996099998">
+    <state x="240" y="150" key="Vcs.Push.Dialog.v2" timestamp="1592997637736">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="240" y="149" key="Vcs.Push.Dialog.v2/0.23.1280.773/-1920.-257.1920.1057@0.23.1280.773" timestamp="1592980441603" />
-    <state x="240" y="150" key="Vcs.Push.Dialog.v2/0.23.1280.777/-1920.-257.1920.1053@0.23.1280.777" timestamp="1592996099998" />
+    <state x="240" y="150" key="Vcs.Push.Dialog.v2/0.23.1280.777/-1920.-257.1920.1053@0.23.1280.777" timestamp="1592997637736" />
     <state width="640" height="385" key="XDebugger.FullValuePopup" timestamp="1592973551936">
       <screen x="0" y="23" width="1280" height="773" />
     </state>

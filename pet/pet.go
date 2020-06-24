@@ -102,18 +102,23 @@ func GroupFight(pets []*Pet) string {
 			e := rand.Intn(len(pets))
 			// 打到自己有概率加血或者停止行动一回合
 			if e == i {
-				coin := rand.Intn(2)
-				if coin == 1 {
-					hp := rand.Intn(60 - pets[i].hp)
-					pets[i].hp += hp
-					res += fmt.Sprintf(HP_UP_DESC, p.name, hp)
-				} else {
-					res += fmt.Sprintf(TIRED_DESC, p.name)
+				e = rand.Intn(len(pets))
+				if e == i {
+					coin := rand.Intn(2)
+					if coin == 1 {
+						hp := rand.Intn(60 - pets[i].hp)
+						pets[i].hp += hp
+						res += fmt.Sprintf(HP_UP_DESC, p.name, hp)
+					} else {
+						res += fmt.Sprintf(TIRED_DESC, p.name)
+					}
+					continue
 				}
-				continue
 			}
 
 			// 打到了尸体的概率太高了， 重新摇一下
+			// 3个人比较适合这种方法， 但是更多人的话概率太高，需要调整
+			// todo 如果将来开更多人的话， 死掉的就从数组中剔除，届时可以增加闪避
 			if pets[e].hp <= 0 {
 				e = rand.Intn(len(pets))
 				if e == i || pets[e].hp <= 0 {
