@@ -6,7 +6,7 @@ const (
 	ROUND_TITLE       = "Round %d \n"
 	PK_TITLE          = "@%s 向 @%s 发起了决斗 \n"
 	ATTR_DESC         = "@%s 血量：%d，力量：%d，敏捷：%d，速度：%d \n"
-	RANK_TITLE        = "%d月%d日Rank榜 \n"
+	RANK_TITLE        = "%d月%d日高手榜 \n"
 	RANK_DESC         = "@%s 积分（%d）胜（%d）负（%d）\n"
 	GROUP_FIGHT_TITLE = "天下第一武道会开幕！ \n首先介绍下参赛者：\n "
 	HP_UP_DESC        = "@%s 服用了疗伤药 血量提升了%d点 \n"

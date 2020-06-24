@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="71a505d5-8e25-4864-9982-f126b934c570" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/rank/2020-06-24" beforeDir="false" afterPath="$PROJECT_DIR$/data/rank/2020-06-24" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pet/data.go" beforeDir="false" afterPath="$PROJECT_DIR$/pet/data.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pet/pet.go" beforeDir="false" afterPath="$PROJECT_DIR$/pet/pet.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pet/skill.go" beforeDir="false" afterPath="$PROJECT_DIR$/pet/skill.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pet/title.go" beforeDir="false" afterPath="$PROJECT_DIR$/pet/title.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pet/weapon.go" beforeDir="false" afterPath="$PROJECT_DIR$/pet/weapon.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/robot" beforeDir="false" afterPath="$PROJECT_DIR$/robot" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,17 +73,19 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add skill" />
     <MESSAGE value="fix：名字包含空格" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix：名字包含空格" />
+    <MESSAGE value="fix：技能和武器特效基本框架搭建" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix：技能和武器特效基本框架搭建" />
   </component>
   <component name="WindowStateProjectService">
     <state x="349" y="71" key="#go_build_main.go" timestamp="1592827060378">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="349" y="71" key="#go_build_main.go/0.23.1280.777/-1920.-257.1920.1053@0.23.1280.777" timestamp="1592827060378" />
-    <state x="234" y="23" key="CommitChangelistDialog2" timestamp="1592980437376">
-      <screen x="0" y="23" width="1280" height="773" />
+    <state x="234" y="23" width="812" height="777" key="CommitChangelistDialog2" timestamp="1592995128926">
+      <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="234" y="23" key="CommitChangelistDialog2/0.23.1280.773/-1920.-257.1920.1057@0.23.1280.773" timestamp="1592980437376" />
+    <state x="234" y="23" width="812" height="777" key="CommitChangelistDialog2/0.23.1280.777/-1920.-257.1920.1053@0.23.1280.777" timestamp="1592995128926" />
     <state width="1238" height="196" key="GridCell.Tab.0.bottom" timestamp="1592995069627">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -130,10 +126,11 @@
     </state>
     <state width="1238" height="243" key="GridCell.Tab.1.right/0.23.1280.773/-1920.-257.1920.1057@0.23.1280.773" timestamp="1592982324696" />
     <state width="1238" height="243" key="GridCell.Tab.1.right/0.23.1280.777/-1920.-257.1920.1053@0.23.1280.777" timestamp="1592914486580" />
-    <state x="240" y="149" key="Vcs.Push.Dialog.v2" timestamp="1592980441603">
-      <screen x="0" y="23" width="1280" height="773" />
+    <state x="240" y="150" key="Vcs.Push.Dialog.v2" timestamp="1592995136841">
+      <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="240" y="149" key="Vcs.Push.Dialog.v2/0.23.1280.773/-1920.-257.1920.1057@0.23.1280.773" timestamp="1592980441603" />
+    <state x="240" y="150" key="Vcs.Push.Dialog.v2/0.23.1280.777/-1920.-257.1920.1053@0.23.1280.777" timestamp="1592995136841" />
     <state width="640" height="385" key="XDebugger.FullValuePopup" timestamp="1592973551936">
       <screen x="0" y="23" width="1280" height="773" />
     </state>
@@ -150,7 +147,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/pet/pet.go</url>
-          <line>99</line>
+          <line>79</line>
           <option name="timeStamp" value="44" />
         </line-breakpoint>
       </breakpoints>
