@@ -62,7 +62,7 @@ func main() {
 		switch texts[0] {
 		case "":
 			if len(texts) == 2 {
-				ename := strings.Trim(texts[1], " ")
+				ename := strings.TrimSpace(texts[1])
 				mname := params["user_name"].(string)
 				p := pet.Adopt(mname)
 				ep := pet.Adopt(ename)
@@ -74,7 +74,7 @@ func main() {
 					p,
 				}
 				for i:=1; i<len(texts); i++ {
-					pets = append(pets, pet.Adopt(strings.Trim(texts[i], " ")))
+					pets = append(pets, pet.Adopt(strings.TrimSpace(texts[i])))
 				}
 				res = pet.GroupFight(pets)
 			}

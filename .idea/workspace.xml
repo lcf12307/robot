@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="71a505d5-8e25-4864-9982-f126b934c570" name="Default Changelist" comment="" />
+    <list default="true" id="71a505d5-8e25-4864-9982-f126b934c570" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/robot" beforeDir="false" afterPath="$PROJECT_DIR$/robot" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
