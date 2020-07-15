@@ -47,7 +47,7 @@ func main() {
 		params := handleParam(c)
 		text := handleText(params["text"].(string))
 		res := getPsResult("panghu", text)
-		sss := setOutPut("", false, res)
+		sss := setOutPut(res, true, nil)
 		c.JSON(200, sss)
 	})
 	r.POST("dd", func(c *gin.Context) {
@@ -212,15 +212,26 @@ func getTodayInHistory() string {
 }
 
 // 获取自动给图片增加文字结果
-func getPsResult(name, text string) []map[string]interface{} {
+func getPsResult(name, text string) string {
 	url := "http://api-kylin.intra.xiaojukeji.com/dichat_robots_sticker_bot_prod/dmoji/image?name=%s&text=%s"
 	url = fmt.Sprintf(url, name, text)
+	return handleImg(url, true).(string)
+}
+
+func handleImg(url string, isM bool) interface{} {
+	if isM {
+		picTmp := "![%s](%s)"
+		return fmt.Sprintf(picTmp, "", url)
+	}
+
 	return []map[string]interface{}{
 		{
-			"images": map[string]interface{}{
-				"url":    url,
-				"height": 150,
-				"width":  240,
+			"images": []map[string]interface{}{
+				{
+					"url":    url,
+					"height": 150,
+					"width":  240,
+				},
 			},
 		},
 	}
